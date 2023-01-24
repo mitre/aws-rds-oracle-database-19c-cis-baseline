@@ -9,12 +9,12 @@ include_controls 'oracle-database-19c-cis-baseline' do
 
   control 'oracle19c-2.1.1' do
     impact 0.0
-    desc 'recast', 'Not applicable since these listener.ora settings are not available under AWS RDS instances'
+    desc 'caveat', 'Not applicable since these listener.ora settings are not available under AWS RDS instances'
   end
 
   control 'oracle19c-2.1.2' do
     impact 0.0
-    desc 'recast', 'Not applicable since these listener.ora settings are not available under AWS RDS instances'
+    desc 'caveat', 'Not applicable since these listener.ora settings are not available under AWS RDS instances'
   end
 
 end
