@@ -27,22 +27,20 @@ This InSpec profile automates the validation of Oracle Database 19c against the 
 #### Required Inputs
 You must specify inputs in an `inputs.yml` file. See `example_inputs.yml` in the profile root folder for a sample. Each input is required for proper execution of the profile.
 ```yaml
-user: 'SYSTEM'
-password: 'password'
-host: '127.0.0.1'
-service: 'ORCLCDB'
-sqlplus_bin: 'sqlplus'
-listener_file: /opt/oracle/product/19c/dbhome_1/network/admin/listener.ora
+user: 'admin'
+password: 'xvIA7zonxGM=1'
+host: '<AWS_RDS_Endpoint>.rds.amazonaws.com'
+service: 'ORCL'
+sqlplus_bin: '/opt/oracle/product/12.2.0.1/dbhome_1/bin/sqlplus'
 multitenant: false
 version: '19.0.0.0.0'
-listeners: ['LISTENER']
 ```
 Some default values have been added to `inspec.yml`, but can be overridden by defining new values in `inputs.yml`. No default values have been given for database-specific connection variables like the password or the service name; these must be specified in the input file.
 ##### Note
 Environment variables will not be interpreted correctly in `inputs.yml` or `inspec.yml`.
 Example:
 ```
-listener_file: $ORACLE_HOME/network/admin/listener.ora # $ORACLE_HOME will not be expanded out correctly!
+sqlplus_bin: $ORACLE_HOME/bin/sqlplus # $ORACLE_HOME will not be expanded out correctly!
 ```
 #### Execute a single control in the profile 
 ```bash
