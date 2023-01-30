@@ -24,26 +24,6 @@ This InSpec profile automates the validation of Oracle Database 19c against the 
 - [SQL\*Plus](https://docs.oracle.com/cd/B19306_01/server.102/b14357/qstart.htm)
   - Release 19c
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### How to execute this instance  
-This profile can be executed against a remote target using the ssh transport, docker transport, or winrm transport of InSpec. Profiles can also be executed directly on the host where InSpec is installed (see https://www.inspec.io/docs/reference/cli/). 
-
 #### Required Inputs
 You must specify inputs in an `inputs.yml` file. See `example_inputs.yml` in the profile root folder for a sample. Each input is required for proper execution of the profile.
 ```yaml
