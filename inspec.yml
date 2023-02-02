@@ -1,0 +1,39 @@
+name: aws-rds-oracle-database-19c-cis-baseline
+title: aws-rds-oracle-database-19c-cis-baseline
+maintainer: MITRE SAF Team
+copyright: MITRE, 2022
+copyright_email: saf@groups.mitre.org
+license: Apache-2.0
+summary: InSpec testing for overlay compliance with the AWS RDS Oracle 19c
+inspec_version: ">= 4.0"
+version: 1.0.0
+
+depends:
+  - name: oracle-database-19c-cis-baseline
+    url: https://github.com/mitre/oracle-database-19c-cis-baseline/archive/main.tar.gz
+
+inputs:
+  - name: user
+    sensitive: true
+    description: 'username Oracle DB'
+    type: String
+    required: true
+    value: 'SYSTEM'
+
+  - name: password
+    sensitive: true
+    description: 'password Oracle DB'
+    type: String
+    required: true
+
+  - name: host
+    sensitive: true
+    description: 'hostname Oracle DB'
+    type: String
+    required: true
+
+  - name: service
+    sensitive: true
+    description: 'service name Oracle DB'
+    type: String
+    required: true

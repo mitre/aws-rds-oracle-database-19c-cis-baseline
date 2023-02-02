@@ -1,0 +1,18 @@
+# description: Username Oracle DB
+user: 'admin'
+
+# description: Password Oracle DB
+password: '<Your_Password>'
+
+# description: Hostname Oracle DB
+host: '<AWS_RDS_Endpoint>.rds.amazonaws.com'
+
+# description: Service name Oracle DB
+service: 'ORCL'
+
+# description: Location of sqlplus tool (try `which sqlplus`)
+sqlplus_bin: '/opt/oracle/product/19.0.0.0/dbhome_1/bin/sqlplus'
+
+# Other inputs based on your target
+multitenant: false
+version: '19.0.0.0.0'
