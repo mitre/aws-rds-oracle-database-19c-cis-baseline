@@ -28,10 +28,10 @@ This InSpec profile automates the validation of Oracle Database 19c against the 
 You must specify inputs in an `inputs.yml` file. See `example_inputs.yml` in the profile root folder for a sample. Each input is required for proper execution of the profile.
 ```yaml
 user: 'admin'
-password: 'xvIA7zonxGM=1'
+password: '<Your_Password>'
 host: '<AWS_RDS_Endpoint>.rds.amazonaws.com'
 service: 'ORCL'
-sqlplus_bin: '/opt/oracle/product/12.2.0.1/dbhome_1/bin/sqlplus'
+sqlplus_bin: '/opt/oracle/product/19.0.0.0/dbhome_1/bin/sqlplus'
 multitenant: false
 version: '19.0.0.0.0'
 ```
