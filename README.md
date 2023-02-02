@@ -86,11 +86,11 @@ The JSON results output file can be loaded into __[heimdall-lite](https://heimda
 The JSON InSpec results file may also be loaded into a __[full heimdall server](https://github.com/mitre/heimdall2)__, allowing for additional functionality such as to store and compare multiple profile runs.
 
 ## Authors
-* Will Dower - [wdower](https://github.com/wdower)
+* Shivani Karikar - [karikarshivani](https://github.com/karikarshivani)
+* Eugene Aronne - [ejaronne](https://github.com/ejaronne)
 
 ## Special Thanks 
-* Eugene Aronne - [ejaronne](https://github.com/ejaronne)
-* Shivani Karikar - [karikarshivani](https://github.com/karikarshivani)
+* Will Dower - [wdower](https://github.com/wdower)
 
 ## Contributing and Getting Help
 To report a bug or feature request, please open an [issue](https://github.com/mitre/aws-rds-oracle-database-19c-cis-baseline/issues/new).
