@@ -37,10 +37,3 @@ inputs:
     description: 'service name Oracle DB'
     type: String
     required: true
-
-  - name: exempted_privileged_accounts
-    description: 'List of accounts which are permitted to have elevated privileges'
-    type: array
-    value: ['rdsadmin'] 
-    profile: oracle-database-19c-cis-baseline
-    sensitive: true
