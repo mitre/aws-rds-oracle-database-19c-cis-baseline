@@ -10,7 +10,7 @@ version: 1.0.0
 
 depends:
   - name: oracle-database-19c-cis-baseline
-    url: https://github.com/mitre/oracle-database-19c-cis-baseline/archive/main.tar.gz
+    url: https://github.com/mitre/oracle-database-19c-cis-baseline/archive/wdower/issue6.tar.gz
 
 inputs:
   - name: user
