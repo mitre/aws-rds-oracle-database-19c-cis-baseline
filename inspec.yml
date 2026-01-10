@@ -10,7 +10,7 @@ version: 1.0.0
 
 depends:
   - name: oracle-database-19c-cis-baseline
-    url: https://github.com/mitre/oracle-database-19c-cis-baseline/archive/main.tar.gz
+    url: https://github.com/mitre/oracle-database-19c-cis-baseline/archive/wdower/issue6.tar.gz
 
 inputs:
   - name: user
@@ -37,3 +37,10 @@ inputs:
     description: 'service name Oracle DB'
     type: String
     required: true
+  
+  - name: exempted_privileged_accounts
+    description: 'List of accounts which are permitted to have elevated privileges'
+    type: array
+    value: ['rdsadmin'] 
+    profile: oracle-database-19c-cis-baseline
+    sensitive: true
